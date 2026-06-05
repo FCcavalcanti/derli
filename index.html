@@ -6,7 +6,9 @@
   <title>DERLI Antiqueda – Tratamento completo contra a queda</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Fonte carregada de forma não-bloqueante -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800&family=Inter:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -1051,7 +1053,7 @@ src="https://www.facebook.com/tr?id=2881404562243680&ev=PageView&noscript=1"/></
 <!-- HEADER -->
 <header>
   <div class="hdr">
-    <a href="#" class="logo"><img src="https://derli.com.br/logoderli.png" alt="DERLI Dermocosméticos"></a>
+    <a href="#" class="logo"><img src="./logo-derli.webp" alt="DERLI Dermocosméticos"></a>
     <nav>
       <a href="#kits">Kits</a>
       <a href="#beneficios">Benefícios</a>
@@ -1082,7 +1084,7 @@ src="https://www.facebook.com/tr?id=2881404562243680&ev=PageView&noscript=1"/></
 
     <!-- COLUNA DA IMAGEM — substitua hero-hand.webp pela sua foto -->
     <div class="hero-img-col">
-      <img src="./hero-hand.webp" alt="DERLI Antiqueda Serum Capilar — mão segurando o produto">
+      <img src="./hero-hand.webp" alt="DERLI Antiqueda Serum Capilar — mão segurando o produto" fetchpriority="high" width="800" height="900">
       <!-- Floating proof badge -->
       <div class="hero-proof">
         <div>
@@ -1172,7 +1174,7 @@ src="https://www.facebook.com/tr?id=2881404562243680&ev=PageView&noscript=1"/></
       </div>
     </div>
     <div class="mec-visual" style="display:flex;flex-direction:column;gap:0;overflow:hidden;border-radius:20px;">
-      <img src="./dropper.webp" alt="DERLI Antiqueda — aplicação do sérum" style="width:100%;height:320px;object-fit:cover;object-position:center;display:block;">
+      <img loading="lazy" src="./dropper.webp" alt="DERLI Antiqueda — aplicação do sérum" style="width:100%;height:320px;object-fit:cover;object-position:center;display:block;">
       <div style="padding:24px;background:var(--white);">
         <div style="font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--purple);margin-bottom:8px;">Ativo Principal</div>
         <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--purple-deep);margin-bottom:8px;">Kopexil</div>
@@ -1192,7 +1194,7 @@ src="https://www.facebook.com/tr?id=2881404562243680&ev=PageView&noscript=1"/></
 
       <!-- Card 1 -->
       <div class="tcard">
-        <img src="./card1-queda.webp" alt="Cabelo caindo no banho" class="tcard-img">
+        <img loading="lazy" src="./card1-queda.webp" alt="Cabelo caindo no banho" class="tcard-img">
         <div class="tcard-body">
           <h3>Sente o cabelo caindo mais que o normal</h3>
           <p>Ação direta no couro cabeludo para reduzir a queda e fortalecer os fios desde a raiz.</p>
@@ -1201,7 +1203,7 @@ src="https://www.facebook.com/tr?id=2881404562243680&ev=PageView&noscript=1"/></
 
       <!-- Card 2 -->
       <div class="tcard">
-        <img src="./card2-ciencia.webp" alt="Tratamento com respaldo científico" class="tcard-img">
+        <img loading="lazy" src="./card2-ciencia.webp" alt="Tratamento com respaldo científico" class="tcard-img">
         <div class="tcard-body">
           <h3>Quer um tratamento com respaldo científico</h3>
           <p>Fórmula com Kopexil e Baicapil, ativos com evidência clínica amplamente utilizados em tratamentos antiqueda.</p>
@@ -1210,7 +1212,7 @@ src="https://www.facebook.com/tr?id=2881404562243680&ev=PageView&noscript=1"/></
 
       <!-- Card 3 -->
       <div class="tcard">
-        <img src="./card3-volume.webp" alt="Fios fracos sem volume" class="tcard-img">
+        <img loading="lazy" src="./card3-volume.webp" alt="Fios fracos sem volume" class="tcard-img">
         <div class="tcard-body">
           <h3>Está cansada de fios fracos e sem volume</h3>
           <p>Fortalece os fios progressivamente, aumentando densidade e volume capilar com uso contínuo.</p>
@@ -1219,7 +1221,7 @@ src="https://www.facebook.com/tr?id=2881404562243680&ev=PageView&noscript=1"/></
 
       <!-- Card 4 -->
       <div class="tcard">
-        <img src="./card4-seguro.webp" alt="Produto seguro e eficaz" class="tcard-img">
+        <img loading="lazy" src="./card4-seguro.webp" alt="Produto seguro e eficaz" class="tcard-img">
         <div class="tcard-body">
           <h3>Quer um produto seguro e eficaz</h3>
           <p>Desenvolvido para homens e mulheres, sem efeitos colaterais conhecidos quando usado corretamente.</p>
@@ -1362,7 +1364,7 @@ src="https://www.facebook.com/tr?id=2881404562243680&ev=PageView&noscript=1"/></
   <p class="sub">Simples, prático e eficaz. Três passos para uma rotina que transforma.</p>
   <div class="inner" style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;max-width:980px;margin:0 auto;">
   <div class="mec-visual" style="border-radius:20px;overflow:hidden;box-shadow:var(--card-shadow);">
-    <img src="./dropper.webp" alt="Aplicação do DERLI Antiqueda com gotejador" style="width:100%;height:440px;object-fit:cover;object-position:center top;display:block;">
+    <img loading="lazy" src="./dropper.webp" alt="Aplicação do DERLI Antiqueda com gotejador" style="width:100%;height:440px;object-fit:cover;object-position:center top;display:block;">
   </div>
   <div class="steps" style="grid-template-columns:1fr;gap:32px;display:flex;flex-direction:column;">
       <div class="step">
@@ -1394,7 +1396,7 @@ src="https://www.facebook.com/tr?id=2881404562243680&ev=PageView&noscript=1"/></
       <div class="ecard">
         <p class="equote">Gosto e recomendo o Antiqueda Derli pela fórmula bem estruturada, com ativos de eficácia conhecida, como o Kopexil, que auxilia na redução da queda ao fortalecer o folículo capilar. Na prática, o que observo nos pacientes são fios mais fortes, menos queda e um crescimento mais consistente com o uso contínuo.</p>
         <div class="einfo">
-          <img src="https://derli.com.br/especialista1.png" alt="Dra. Marcia Lins" class="eavatar">
+          <img loading="lazy" src="./especialista1.webp" alt="Dra. Marcia Lins" class="eavatar">
           <div>
             <div class="ename">Dra. Marcia Lins</div>
             <div class="erole">Dermatologista / Tricologia</div>
@@ -1404,7 +1406,7 @@ src="https://www.facebook.com/tr?id=2881404562243680&ev=PageView&noscript=1"/></
       <div class="ecard">
         <p class="equote">Vejo bons resultados quando o cliente segue o protocolo corretamente. A consistência do uso é o que traz respostas mais estáveis e visíveis ao longo do tempo.</p>
         <div class="einfo">
-          <img src="https://derli.com.br/especialista2.jpg" alt="Bruno Lopes" class="eavatar">
+          <img loading="lazy" src="./especialista2.webp" alt="Bruno Lopes" class="eavatar">
           <div>
             <div class="ename">Bruno Lopes</div>
             <div class="erole">Hair Specialist e Visagista</div>
@@ -1423,9 +1425,9 @@ src="https://www.facebook.com/tr?id=2881404562243680&ev=PageView&noscript=1"/></
   <div class="inner">
     <div class="gal-scroll">
       <div class="gal-track">
-        <img src="https://derli.com.br/antesedepoisnat.JPG" alt="Resultado real DERLI">
-        <img src="https://derli.com.br/antesedepois4.png" alt="Resultado real DERLI">
-        <img src="https://derli.com.br/antesedepois3.png" alt="Resultado real DERLI">
+        <img loading="lazy" src="./antes-depois1.webp" alt="Resultado real DERLI">
+        <img loading="lazy" src="./antes-depois1.webp" alt="Resultado real DERLI">
+        <img loading="lazy" src="./antes-depois2.webp" alt="Resultado real DERLI">
       </div>
     </div>
   </div>
@@ -1448,7 +1450,7 @@ src="https://www.facebook.com/tr?id=2881404562243680&ev=PageView&noscript=1"/></
       <div class="pcard-wrap">
       <div style="height:31px;"></div>
       <div class="pcard">
-        <img src="./kit1-frasco.webp" alt="1 Frasco DERLI" class="pimg">
+        <img loading="lazy" src="./kit1-frasco.webp" alt="1 Frasco DERLI" class="pimg">
         <div class="pcard-body">
           <div>
             <span class="ptag">30 dias de tratamento</span>
@@ -1479,7 +1481,7 @@ src="https://www.facebook.com/tr?id=2881404562243680&ev=PageView&noscript=1"/></
       <div class="pcard-wrap">
       <div class="pbadge">Mais Popular</div>
       <div class="pcard feat">
-        <img src="./kit2-leve3.webp" alt="Compre 2 Leve 3 DERLI" class="pimg">
+        <img loading="lazy" src="./kit2-leve3.webp" alt="Compre 2 Leve 3 DERLI" class="pimg">
         <div class="pcard-body">
           <div>
             <span class="ptag">90 dias de tratamento</span>
@@ -1512,7 +1514,7 @@ src="https://www.facebook.com/tr?id=2881404562243680&ev=PageView&noscript=1"/></
       <div class="pcard-wrap">
       <div class="pbadge pbadge-dark">Melhor Custo-Benefício</div>
       <div class="pcard">
-        <img src="./kit4-leve6.webp" alt="Compre 4 Leve 6 DERLI" class="pimg">
+        <img loading="lazy" src="./kit4-leve6.webp" alt="Compre 4 Leve 6 DERLI" class="pimg">
         <div class="pcard-body">
           <div>
             <span class="ptag">180 dias de tratamento</span>
@@ -1590,11 +1592,11 @@ src="https://www.facebook.com/tr?id=2881404562243680&ev=PageView&noscript=1"/></
   <div class="label">Onde encontrar</div>
   <h2 class="ttl" style="margin-bottom:44px;">Presente em farmácias parceiras</h2>
   <div class="pharma-row">
-    <img src="https://derli.com.br/farmaciadosmunicipios.png" alt="Farmácia parceira">
-    <img src="https://derli.com.br/goianafarma.png" alt="Farmácia parceira">
-    <img src="https://derli.com.br/farmaciabompreco.png" alt="Farmácia parceira">
-    <img src="https://derli.com.br/drogariapoupeja.png" alt="Farmácia parceira">
-    <img src="https://derli.com.br/farmaciacandeias.png" alt="Farmácia parceira">
+    <img loading="lazy" src="./farma-municipios.webp" alt="Farmácia parceira">
+    <img loading="lazy" src="./farma-goiana.webp" alt="Farmácia parceira">
+    <img loading="lazy" src="./farma-bompreco.webp" alt="Farmácia parceira">
+    <img loading="lazy" src="./farma-poupeja.webp" alt="Farmácia parceira">
+    <img loading="lazy" src="./farma-candeias.webp" alt="Farmácia parceira">
   </div>
 </section>
 
@@ -1725,7 +1727,7 @@ src="https://www.facebook.com/tr?id=2881404562243680&ev=PageView&noscript=1"/></
 <footer>
   <div class="foot-top">
     <div class="foot-brand">
-      <img src="https://derli.com.br/logoderli.png" alt="DERLI Dermocosméticos">
+      <img src="./logo-derli.webp" alt="DERLI Dermocosméticos">
       <p>Tratamento completo contra a queda capilar com fórmula de ativos de eficácia reconhecida.</p>
     </div>
     <div class="foot-col">
